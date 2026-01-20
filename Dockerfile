@@ -3,10 +3,17 @@ FROM node:18-alpine AS build
 
 WORKDIR /app
 
+# Copy package files
 COPY package*.json ./
+
+# Install dependencies
 RUN npm install
 
+# Copy .env file and all source code
+COPY .env ./
 COPY . .
+
+# Build the app (this is when env vars are embedded)
 RUN npm run build
 
 # Production stage
