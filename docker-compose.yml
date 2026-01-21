@@ -3,8 +3,8 @@ version: '3.8'
 services:
   react-app:
     build: .
-    container_name: react-app-container
+    container_name: react-app-new
     image: react-app:latest
     ports:
-      - "8084:80"
+      - "8085:80"
     restart: unless-stopped
