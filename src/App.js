@@ -4,7 +4,7 @@ function App() {
   return (
     <div style={{ padding: 20 }}>
       <h2>Environment Variables</h2>
-      <p><strong>Testing</strong></p>
+      <p><strong>Testing..</strong></p>
       <p><strong>Title:</strong> {process.env.REACT_APP_TITLE}</p>
       <p><strong>Version:</strong> {process.env.REACT_APP_VERSION}</p>
     </div>
