@@ -6,7 +6,6 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/M-Saranya123/react-app.git'
             }
         }
-        
         stage('Stop Old Container') {
             steps {
                 script {
